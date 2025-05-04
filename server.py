@@ -1,4 +1,5 @@
 import os
+from typing import Any
 
 import aiohttp
 from dotenv import load_dotenv
@@ -12,14 +13,14 @@ API_URL = os.getenv("API_URL", "https://forge-api.daimones.xyz/chat")
 
 
 @mcp.tool()
-async def query_agent(query: str) -> str:
+async def query_agent(query: str) -> dict[str, Any]:
     """Queries project scaffolding agent.
 
     Args:
         query (str): The project name.
 
     Returns:
-        str: A string containing the API response.
+        dict[str, Any]: A dictionary containing the API response.
 
     Raises:
         ValueError: If the query is empty.
