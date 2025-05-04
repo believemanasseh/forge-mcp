@@ -67,6 +67,10 @@ Sends request queries to the Forge API and returns the results.
 query_agent("Create a Django project named deet.")
 ```
 
+## Integration with LLMs
+
+This MCP server can be integrated with LLMs that support the Model Control Protocol, allowing them to use the Forge project scaffolding capabilities directly.
+
 ## Contributing
 
 We welcome contributions to the Forge MCP Server project! Here's how you can contribute:
@@ -83,10 +87,6 @@ We welcome contributions to the Forge MCP Server project! Here's how you can con
 - Write docstrings for all functions, classes, and methods
 - Add appropriate unit tests for new features
 - Update documentation to reflect any changes
-
-## Integration with LLMs
-
-This MCP server can be integrated with LLMs that support the Model Control Protocol, allowing them to use the Forge project scaffolding capabilities directly.
 
 ## License
 
