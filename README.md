@@ -71,9 +71,64 @@ Sends request queries to the Forge API and returns the results.
 query_agent("Create a Django project named deet.")
 ```
 
-## Integration with LLMs
+## Integration with MCP Hosts
 
-This MCP server can be integrated with LLMs that support the Model Control Protocol, allowing them to use the Forge project scaffolding capabilities directly.
+Select your favourite host from the options below and follow the configuration instructions.
+
+### Integrating Cursor
+
+Update your Cursor configuration file at `~/.cursor/mcp.json` or `.cursor/mcp.json`:
+
+```json
+{
+    "mcpServers": {
+        "forge-mcp": {
+        "command": "pipenv",
+        "args": ["run", "fastmcp", "run", "server.py"],
+        "transport": "stdio"
+        }
+    }
+}
+```
+
+### Integrating Claude Desktop
+
+In Claude Desktop, go to `Settings > Developer > Edit Config`. Replace the configuration with:
+
+```json
+{
+    "mcpServers": {
+        "forge-mcp": {
+            "command": "pipenv",
+            "args": [
+                "run",
+                "fastmcp",
+                "run",
+                "server.py"
+            ],
+            "cwd": "/path/to/your/forge-mcp"
+        }
+    }
+}
+```
+
+*Note: Replace `/path/to/your/forge-mcp` with the absolute path to your cloned `forge-mcp` directory.*
+
+### Integrating VSCode
+
+Update the VSCode workspace configuration file at `.vscode/mcp.json`:
+
+```json
+{
+    "servers": {
+        "forge-mcp": {
+            "type": "stdio",
+            "command": "pipenv",
+            "args": ["run", "fastmcp", "run", "server.py"],
+        }
+    }
+}
+```
 
 ## Contributing
 
