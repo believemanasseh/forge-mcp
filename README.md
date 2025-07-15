@@ -75,17 +75,20 @@ query_agent("Create a Django project named deet.")
 
 Select your favourite host from the options below and follow the configuration instructions.
 
-### Integrating Cursor
+### Integrating Cursor or Windsurf
 
-Update your Cursor configuration file at `~/.cursor/mcp.json` or `.cursor/mcp.json`:
+Update your configuration files at:
+
+- Cursor: `~/.cursor/mcp.json` or `.cursor/mcp.json`
+- Windsurf: `~/.codeium/windsurf/mcp_config.json`
 
 ```json
 {
     "mcpServers": {
         "forge-mcp": {
-        "command": "pipenv",
-        "args": ["run", "fastmcp", "run", "server.py"],
-        "transport": "stdio"
+            "command": "pipenv",
+            "args": ["run", "fastmcp", "run", "server.py"],
+            "transport": "stdio"
         }
     }
 }
