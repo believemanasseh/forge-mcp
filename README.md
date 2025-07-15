@@ -73,8 +73,6 @@ query_agent("Create a Django project named deet.")
 
 ## Integration with MCP Hosts
 
-Select your favourite host from the options below and follow the configuration instructions.
-
 ### Integrating Cursor or Windsurf
 
 Update your configuration files at:
