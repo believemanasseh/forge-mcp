@@ -1,10 +1,10 @@
 # Forge MCP Server
 
 [![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)](https://www.python.org/)
-[![MCP](https://img.shields.io/badge/MCP-Model%20Control%20Protocol-green.svg)](https://github.com/lmql-lang/mcp)
+[![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-green.svg)](https://github.com/lmql-lang/mcp)
 [![MCP Server](https://img.shields.io/badge/MCP%20Server-FastMCP-orange.svg)](https://github.com/lmql-lang/mcp)
 
-A Model Control Protocol (MCP) server for the Forge project scaffolding agent. This server acts as a bridge between Large Language Models (LLMs) and the Forge API, enabling AI assistants to scaffold new projects based on user requirements.
+A Model Context Protocol (MCP) server for the Forge project scaffolding agent. This server acts as a bridge between Large Language Models (LLMs) and the Forge API, enabling AI assistants to scaffold new projects based on user requirements.
 
 ![MCP Inspector Screenshot](assets/mcp-inspector-screenshot.jpg)
 
@@ -14,7 +14,7 @@ Forge MCP Server uses the FastMCP framework to create tools that LLMs can use to
 
 ## Features
 
-- Easy integration with LLMs using the Model Control Protocol
+- Easy integration with LLMs using the Model Context Protocol
 - Connection to the Forge project scaffolding API
 - Simple query interface for project generation
 - Error handling and timeout management
